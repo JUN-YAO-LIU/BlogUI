@@ -1,0 +1,119 @@
+﻿header.masthead h1, header.masthead .h1 {
+  font-size: 2.25rem;
+}
+@media (min-width: 992px) {
+  header.masthead {
+    height: 100vh;
+    min-height: 40rem;
+    padding-top: 4.5rem;
+    padding-bottom: 0;
+  }
+  header.masthead p {
+    font-size: 1.15rem;
+  }
+  header.masthead h1, header.masthead .h1 {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 1200px) {
+  header.masthead h1, header.masthead .h1 {
+    font-size: 3.5rem;
+  }
+}
+.navbar{
+    background: transparent;
+}
+
+@media (min-width: 992px) {
+#mainNav {
+    box-shadow: none;
+    background-color: transparent;
+  }
+
+}
+
+
+.page-section {
+    padding: 8rem 0;
+}
+
+
+.ml-auto,
+.mx-auto {
+    margin-left: auto !important;
+}
+
+.mr-auto,
+.mx-auto {
+    margin-right: auto !important;
+}
+
+
+/*IG Header*/
+header.masthead {
+    padding-top: 10rem;
+    padding-bottom: calc(10rem - 4.5rem);
+    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("https://images.pexels.com/photos/2330137/pexels-photo-2330137.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    z-index: -1;
+}
+
+    header.masthead h1 {
+        font-size: 2.25rem;
+    }
+
+@media (min-width: 992px) {
+    header.masthead {
+        height: 10vh;
+        min-height: 40rem;
+        padding-top: 4.5rem;
+        padding-bottom: 0;
+    }
+
+        header.masthead p {
+            font-size: 1.15rem;
+        }
+
+        header.masthead h1 {
+            font-size: 3rem;
+        }
+}
+
+@media (min-width: 1200px) {
+    header.masthead h1 {
+        font-size: 3.5rem;
+    }
+}
+
+.page-section {
+    padding: 8rem 0;
+}
+
+#headeriglist {
+    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("https://images.pexels.com/photos/4911744/pexels-photo-4911744.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+    background-position: center;
+    background-repeat: no-repeat; /*沒重複，所以圖片不夠大 就會留空 用size 性質塞滿全部*/
+    background-attachment: scroll;
+    background-size: cover; /*背景覆蓋整個區塊*/
+}
+
+
+/*category search*/
+@media only screen and (max-width: 768px) {
+    #categorylist {
+        display: none;
+    }
+
+    #categorylistheader {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #categorylistheader {
+        display: none;
+    }
+}

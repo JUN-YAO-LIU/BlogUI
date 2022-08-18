@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    </link>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/hybrid.min.css" rel="stylesheet">
+    </link>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <title>noeteprogramV2</title>
+
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Add a gray background color with some padding */
+        /* body {
+            font-family: Arial;
+            padding: 20px;
+            background: #f1f1f1;
+        } */
+
+
+
+        /* Create two unequal columns that floats next to each other */
+        /* Left column */
+        .leftcolumn {
+            float: left;
+            width: 75%;
+        }
+
+        /* Right column */
+        .rightcolumn {
+            float: right;
+            width: 25%;
+            padding-left: 20px;
+        }
+
+        /* Fake image */
+        .fakeimg {
+            background-color: #aaa;
+            width: 100%;
+            padding: 20px;
+        }
+
+        /* Add a card effect for articles */
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Footer */
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+            clear: both;
+        }
+
+        /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 800px) {
+
+            .leftcolumn,
+            .rightcolumn {
+                width: 100%;
+                padding: 0;
+            }
+        }
+
+        .wrapper {
+            display: flex;
+            width: 100%;
+            align-items: stretch;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <header class="bd-header sticky-xl-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">JimJimBlog</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <!-- <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>-->
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                程式筆記
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="noteprogram.html">C#</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">WebFrom</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">ASP.NET MVC Core</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="miniprojects.html">微專案</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="aBoutJim.html">聯絡Jim</a>
+                        </li>
+
+                        <!-- <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li> -->
+                    </ul>
+                    <form class="d-flex ml-auto">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="bd-cheatsheet container-fluid bg-white m-5">
+                        <section id="content">
+                            <!-- stick-xl-top會定在最上面 -->
+                            <h2 class="fw-bold pt-3 pt-xl-5 pb-2 pb-xl-3">C#</h2>
+
+                            <article class="" id="typography">
+                                <div class="align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+                                    <h3>日期處理</h3>
+                                </div>
+
+                                <div>
+                                    <div class="bd-example">
+                                        <p class="display-2">字串切割</p>
+                                    </div>
+
+                                    <div class="bd-example">
+                                        <p class="h1">原理</p>
+                                    </div>
+
+                                    <div class="bd-example">
+                                        <p class="lead">
+                                            Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis
+                                            mollis, est non
+                                            commodo luctus.
+                                        </p>
+                                    </div>
+                                    <div class="bd-example">
+                                        <p class="h5">相關連結</p>
+                                    </div>
+
+                                    <div class="bd-example">
+                                        <p class="lead">
+                                        <ul>
+                                            <li><a href="">鳥歌的私房菜</a></li>
+                                            <li><a href="">jimIP 介紹的私房菜</a></li>
+                                            <li><a href="">用kobe 的心思來寫程式 你看過4的太陽 那你看過整晚的星空嗎</a></li>
+                                        </ul>
+                                        </p>
+                                    </div>
+
+
+                                    <div class="bd-example">
+                                        <p class="h1">使用情境</p>
+                                    </div>
+
+                                    <div class="bd-example">
+                                        <p class="lead">
+                                        <ul>
+                                            <li>想要最後一個字</li>
+                                            <li>想要切第一個字</li>
+                                            <li>想要把所有的字都加起來</li>
+                                        </ul>
+                                        </p>
+                                    </div>
+
+
+                                    <div class="bd-example">
+                                        <p class="h1">程式範例</p>
+                                    </div>
+
+                                    <!-- <div class="bd-example" style="background-color:darkgray; border-left: solid 1px darkcyan">
+                                        <div class="m-3 h3">Example_1</div>
+                                        <div class="" style="background-color: white;">
+                
+                                        </div>
+                                    </div> -->
+                                    <div class="card mb-3">
+                                        <div class="card-body">
+                                            <div class="card-header mb-3">
+                                                完整範例_Example_1
+                                            </div>
+                                            <pre>
+                                                <code>
+function myFunction(p1, p2)
+{
+    return p1 * p2; // The function returns the product of p1 and p2
+}
+                                                </code>
+                                            </pre>
+                                        </div>
+                                    </div>
+
+                                    <div class="card mb-3">
+                                        <div class="card-body">
+                                            <div class="card-header mb-3">
+                                                Step1_定義Function
+                                            </div>
+                                            <p>
+                                                function myFunction(p1, p2)
+                                            </p>
+                                            <hr />
+                                            <p>
+                                                先用js 語法定義一個涵式，並傳入兩個參數
+                                            </p>
+                                            <hr />
+                                            <p>
+                                                補充連結 :
+                                                <li><a href="">鳥歌的私房菜</a></li>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="card mb-3">
+                                        <div class="card-body">
+                                            <div class="card-header mb-3">
+                                                Step2_Function 想做的事
+                                            </div>
+                                            <p>{
+                                                return p1 * p2; // The function returns the product of p1 and p2
+                                                }function myFunction(p1, p2)
+                                            </p>
+                                            <hr />
+                                            <p>
+                                                直接回傳，運算好的結果。
+                                            </p>
+                                            <hr />
+                                            <p>
+                                                補充連結 :
+                                                <li><a href="">鳥歌的私房菜_1</a></li>
+                                                <li><a href="">鳥歌的私房菜_2</a></li>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-5">
+                                        <div class="mt-3">
+                                            <p class="h5">參考連結</p>
+                                        </div>
+
+                                        <div class="bd-example">
+                                            <li><a href="">鳥歌的私房菜</a></li>
+                                            <li><a href="">鳥歌的私房菜</a></li>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                            </article>
+
+                        </section>
+                    </div>
+                </div>
+                <div class="col-md-3 ms-auto">
+                    <div class="card">
+                        <h2>目錄：</h2>
+                        <ul>
+                            <li>HeroKu(1)</li>
+                            <li>C# 20天學從0到初學者(3)</li>
+                            <li>asp.net CoreMVC 20天學從0到初學者(20)</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <h2>文章分類：</h2>
+                        <ul>
+                            <li>HeroKu(1)</li>
+                            <li>C# 20天學從0到初學者(3)</li>
+                            <li>asp.net CoreMVC 20天學從0到初學者(20)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+    <div class="footer">
+        <h2>Footer</h2>
+    </div>
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
